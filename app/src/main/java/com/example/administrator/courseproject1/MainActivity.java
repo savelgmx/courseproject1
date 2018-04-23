@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,14 +22,27 @@ public class MainActivity extends AppCompatActivity {
 private EditText mEditTextOne;
 private Button mButtonOne;
 
-//-----обработка нажатия на кнопки
-    private View.OnClickListener mOnButtonOneClickListener= new View.OnClickListener(){
-        @Override
-        public void onClick(View view){
-            //todo обработка нажатия на кнопки
-        }
 
-};
+//-----обработка нажатия на кнопки
+    private View.OnClickListener mOnButtonOneClickListener;
+
+    {
+        mOnButtonOneClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //todo обработка нажатия на кнопки
+
+                if (IsEditTextEmpty())  //если текст в EditText присутсвует то выдает подсказку на экран
+
+                {
+                    Toast.makeText(getApplicationContext(),mEditTextOne.getText().toString(),Toast.LENGTH_LONG).show();
+                 }
+
+            }
+
+        };
+    }
+
     private boolean IsEditTextEmpty(){
         return !TextUtils.isEmpty(mEditTextOne.getText());
     }
