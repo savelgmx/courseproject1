@@ -11,13 +11,22 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 /*
-Задание
-
+Задание 1
+(выполнено)
 Создать проект с пустой активити.
 В разметку добавить EditText и Button.
 Вводим текст и по нажатию на Button отображаем Toast с введенным текстом.
 Если в EditText нет текста, то по нажатию на Button ничего не происходит.
+
+Задание 2
+
+Создать второй экран с TextView и Button
+Второй экран теперь открывается при нажатии на кнопку на первом экране
+В TextView передаем текст из EditText первого экрана.
+По нажатию на Button пока ничего не происходит.
+
  */
+
 
 private EditText mEditTextOne;
 private Button mButtonOne;
