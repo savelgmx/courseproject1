@@ -47,8 +47,6 @@ private Button mButtonOne;
         return !TextUtils.isEmpty(mEditTextOne.getText());
     }
 
-///
-////
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
