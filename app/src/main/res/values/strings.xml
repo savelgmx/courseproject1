@@ -2,6 +2,9 @@
     <string name="app_name">CourseProject1</string>
     <string name="one_hint">Произвольный текст для ввода</string>
     <string name="one_button">Кнопка 1</string>
-    <string name="button_one_hint">Нажми на кнопку</string>
+    <string name="two_button">Кнопка 2</string>
+    <string name="button_one_hint">Нажми на кнопку,получишь результат</string>
+    <string name="button_two_hint">Нажми на кнопку</string>
+
 
 </resources>
