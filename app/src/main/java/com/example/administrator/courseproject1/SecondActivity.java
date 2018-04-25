@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class SecondActivity extends AppCompatActivity{
 
 
-    private TextView
+    private TextView mTextView;
     private Button mButtonTwo;
 
     @Override
