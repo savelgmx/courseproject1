@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 Если в EditText нет текста, то по нажатию на Button ничего не происходит.
 
 Задание 2
-
+(выполнено)
 Создать второй экран с TextView и Button
 Второй экран теперь открывается при нажатии на кнопку на первом экране
 В TextView передаем текст из EditText первого экрана.
