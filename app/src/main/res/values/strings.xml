@@ -5,6 +5,8 @@
     <string name="two_button">Кнопка 2</string>
     <string name="button_one_hint">Нажми на кнопку,получишь результат</string>
     <string name="button_two_hint">Нажми на кнопку</string>
+    <string name="input_error">Ошибка ввода данных</string>
+
 
 
 </resources>
