@@ -52,11 +52,10 @@ private String mEditTextOneString;//произвольная строка в mEd
                 {
                     mEditTextOneString=mEditTextOne.getText().toString();
                     showMessage(mEditTextOneString);
-                    //далее запускаем вторую форму с помощью Intent
-                    Intent startSecondActivityIntent =new Intent(MainActivity.this,SecondActivity.class);
+
+                    Intent startSecondActivityIntent =new Intent(MainActivity.this,SecondActivity.class);//далее запускаем вторую форму с помощью Intent
                     startSecondActivityIntent.putExtra(SecondActivity.MAIN_EDITTEXT_KEY,mEditTextOneString);//Intent принимает текст введенный в EditText первого экрана.
                     startActivity(startSecondActivityIntent);//собственно старт второй формы через интент
- /*                   */
 
                  } else {
 
