@@ -1,10 +1,9 @@
 package com.example.administrator.courseproject1;
 
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -30,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 Задание 3.
 (выполнено частично 28.04 градиент добавлен)
+(выполнено полностью 30.04)
 Добавить любой градиент в качестве фона обоим экранам.
 По нажатию на Button второго экрана
 открывается браузер со страницей google.com с вбитым в поиск словом, которое отображается в TextView.
