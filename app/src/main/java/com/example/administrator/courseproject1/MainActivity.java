@@ -37,15 +37,15 @@ public class MainActivity extends AppCompatActivity {
  */
 
 
-private EditText mEditTextOne;
-private Button mButtonOne;
-private String mEditTextOneString;//произвольная строка в mEditTextOneString
+    private EditText mEditTextOne;
+    private Button mButtonOne;
+    private String mEditTextOneString;//произвольная строка в mEditTextOneString
 
     private void showMessage(String string) {
         Toast.makeText(this, string, Toast.LENGTH_LONG).show();
     }
 
-//-----обработка нажатия на кнопки
+    //-----обработка нажатия на кнопки
     private View.OnClickListener mOnButtonOneClickListener;
 
     {
@@ -56,16 +56,16 @@ private String mEditTextOneString;//произвольная строка в mEd
                 if (IsEditTextEmpty())  //если текст в EditText присутсвует то выдает подсказку на экран
 
                 {
-                    mEditTextOneString=mEditTextOne.getText().toString();
+                    mEditTextOneString = mEditTextOne.getText().toString();
                     showMessage(mEditTextOneString);
 
-                    Intent startSecondActivityIntent =new Intent(MainActivity.this,SecondActivity.class);//далее запускаем вторую форму с помощью Intent
-                    startSecondActivityIntent.putExtra(SecondActivity.MAIN_EDITTEXT_KEY,mEditTextOneString);//Intent принимает текст введенный в EditText первого экрана.
+                    Intent startSecondActivityIntent = new Intent(MainActivity.this, SecondActivity.class);//далее запускаем вторую форму с помощью Intent
+                    startSecondActivityIntent.putExtra(SecondActivity.MAIN_EDITTEXT_KEY, mEditTextOneString);//Intent принимает текст введенный в EditText первого экрана.
                     startActivity(startSecondActivityIntent);//собственно старт второй формы через интент
 
-                 } else {
+                } else {
 
-                    mEditTextOneString=getResources().getString(R.string.input_error);
+                    mEditTextOneString = getResources().getString(R.string.input_error);
                     showMessage(mEditTextOneString);//выдача сообщения обшибке ввода
                 }
 
@@ -75,7 +75,7 @@ private String mEditTextOneString;//произвольная строка в mEd
         };
     }
 
-    private boolean IsEditTextEmpty(){
+    private boolean IsEditTextEmpty() {
         return !TextUtils.isEmpty(mEditTextOne.getText());
     }
 
@@ -86,8 +86,8 @@ private String mEditTextOneString;//произвольная строка в mEd
         setContentView(R.layout.activity_main);
 
         //------инициализируем EditText и Button----
-        mEditTextOne=findViewById(R.id.etOne);
-        mButtonOne=findViewById(R.id.buttonOne);
+        mEditTextOne = findViewById(R.id.etOne);
+        mButtonOne = findViewById(R.id.buttonOne);
 
         mButtonOne.setOnClickListener(mOnButtonOneClickListener);//иницыализируем обработчик нажатия на кнопки
 
